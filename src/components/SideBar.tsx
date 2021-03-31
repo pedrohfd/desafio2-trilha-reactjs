@@ -1,5 +1,10 @@
+import { useMovies } from '../MoviesContext'
+import { Button } from './Button'
+
 export function SideBar() {
   // Complete aqui
+  const { genres, handleClickButton, selectedGenreId } = useMovies()
+
   return (
     <nav className="sidebar">
       <span>
